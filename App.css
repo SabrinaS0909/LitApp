@@ -1,3 +1,5 @@
+/*loading animation*/
+
 .App {
   text-align: center;
 }
@@ -22,7 +24,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
- 
 
 @keyframes App-logo-spin {
   from {
@@ -33,3 +34,198 @@
   }
 } 
 
+/*general stylings*/
+/* 
+body {
+	background-color: #3b272a;
+}
+*/
+img {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	margin: 50px;
+	border-radius: 10px;
+  	filter: drop-shadow(10px 10px 10px #1a1213);
+	z-index: -1;
+}
+
+footer {
+	position: fixed;
+	text-align: right;
+	top: 800px;
+	right: 460px;
+}
+
+input:focus::placeholder {
+	color: transparent;
+	text-shadow: none;
+}
+
+::selection {
+  background: #56e389;
+  color: white;
+}
+
+/*front specifics*/
+
+body {
+  background-color:rgb(227, 255, 101)
+}
+
+/*inside specifics*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(179, 16, 16);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -5;
+}
+
+.flexContainer {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 700px;
+	width: 1300px;	
+}
+
+.flexItem {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+  
+.lists {
+	height: 95%;
+	width: 88.5%;
+	position: relative;
+	left: 6%;
+	top: 16.5%
+}
+  .leftListBox {
+	  width: 48%;
+  }
+  .rightListBox {
+	  width: 49.5%;
+  }
+    .eachListItem {
+	  list-style: none;
+	  margin: 2.35% 0 2.35% 0;
+	  font-family: Apple Chancery, cursive;
+	  font-size: 21px;
+	  color: #766c60;
+    }
+
+.one {
+	transform: rotate(-1.5deg);
+	position: relative;
+	bottom: 5px;
+}
+.two {
+	transform: rotate(-1.25deg);
+	position: relative;
+	top: -1px;
+}
+.three, .four {
+	transform: rotate(-1deg);
+	position: relative;
+	top: 3px;
+}
+.five, .six, .seven, .eight {
+	transform: rotate(-.5deg);
+	position: relative;
+	top: 8px;
+}
+.six, .seven{
+	position: relative;
+	top: 10px;
+}
+.eight {
+	position: relative;
+	top: 12px;
+}
+.nine, .ten{
+	position: relative;
+	top: 15px;
+}
+.eleven {
+	position: relative;
+	top: 17px;
+}
+.twelve, .thirteen {
+	transform: rotate(.5deg);
+	position: relative;
+	top: 20px;
+}
+.fourteen {
+	transform: rotate(1deg);
+	position: relative;
+	top: 23px;
+}
+.fifteen, .sixteen {
+	transform: rotate(.25deg);
+	position: relative;
+	top: -3px;
+}
+.fifteen {
+	position: relative;
+	top: -5px;
+}
+.seventeen {
+	transform: rotate(.45deg);
+}
+.eighteen {
+	transform: rotate(.20deg);
+	position: relative;
+	top: 2px;
+}
+.nineteen, .twenty {
+	position: relative;
+	top: 3px;
+}
+.twentyOne, .twentyTwo {
+	position: relative;
+	top: 5px;
+}
+.twentyThree, .twentyFour, .twentyFive, .twentySix, .twentySeven, .twentyEight {
+	transform: rotate(.5deg);
+	position: relative;
+	top: 7px;
+}
+.twentyFour {
+	position: relative;
+	top: 9px;
+}
+.twentyFive, .twentySix {
+	position: relative;
+	top: 11px;
+}
+.twentySeven, .twentyEight {
+	position: relative;
+	top: 15px;
+}
+
+/*back specifics*/
+
+body {
+	background-color: #1b94cc;
+}
