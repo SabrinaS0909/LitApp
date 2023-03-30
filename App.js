@@ -1,5 +1,7 @@
+import front from '../src/frontOfBook.png';
+import inside from '../src/insideOfBook.png';
+import back from '../src/backOfBook.png';
 import logo from './logo2.png';
-import './App.css';
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <Front/>
       <Inside/>
       <Back/>
+      <Loading/>
     </div>
   );
 }
@@ -14,50 +17,9 @@ function App() {
 function Front() {
   return (
     <div>
-      
-    </div>
-  );
-}
-function Inside() {
-  return (
-    <div>
+      <img src={front} className="frontOfBook" alt="The Front of Your Book" width="1334px" height="750px" />
 
-    </div>
-  );
-}
-function Back() {
-  return (
-    <div>
-
-    </div>
-  );
-}
-
-function Loading() {
-  return (
-    <div>
-      <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-      </header>
-    </div>
-  );
-}
-
-  
-      <body>
-        <img src="%PUBLIC_URL%/frontOfBook.png" alt="The Front of Your Book" width="1334px" height="750px"></img> 
-        <form action="{file that the form data should be sent to}" method="post">
+      <form action="{file that the form data should be sent to}" method="post">
           <div>
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required></input>
@@ -78,13 +40,50 @@ function Loading() {
             <p>Not a member yet? <a href="#">Sign up!!</a></p>
           </div>
         </form>
-      </body>
     </div>
   );
 }
 
+function Inside() {
+  return (
+    <div>
+      <img src={inside} className="insideOfBook" alt="The Inside of Your Book" width="1334px" height="750px" />
+    </div>
+  );
+}
 
+function Back() {
+  return (
+    <div>
+      <img src={back} className="backOfBook" alt="The Back of Your Book" width="1334px" height="750px" />
 	
-  
+	    <div class="savedStoriesContainer">
+		    <div class="savedStories">
+
+			  </div>
+		    <button>Post</button>
+		    <button>Edit</button>
+		    <button>Delete</button>
+		    <button> (arrow left) </button>
+		    <button> (arrow right) </button>
+	    </div>
+	    <div class="postedStoriesContainer">
+		    <div class="postedStories">
+		
+		    </div>
+		    <button> (arrow left) </button>
+		    <button> (arrow right) </button>
+	    </div>
+    </div>
+  );
+}
+
+function Loading() {
+  return (
+    <div>
+      <img src={logo} className="App-logo" alt="logo" />
+    </div>
+  );
+}  
 
 export default App;
