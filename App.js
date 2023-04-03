@@ -1,45 +1,22 @@
-import front from '../src/frontOfBook.png';
-import inside from '../src/insideOfBook.png';
-import back from '../src/backOfBook.png';
+import React, { useState } from "react";
+import inside from './insideOfBook.png';
+import back from './backOfBook.png';
 import logo from './logo2.png';
+import { Login } from "./Login.jsx";
+import { Register } from "./Registration.jsx"
 
 function App() {
-  return (
-    <div>
-      <Front/>
-      <Inside/>
-      <Back/>
-      <Loading/>
-    </div>
-  );
+  const [currentForm, setCurrentForm] = useState('login');
+
+const toggleForm = (formName) => {
+  setCurrentForm(formName);
 }
 
-function Front() {
   return (
     <div>
-      <img src={front} className="frontOfBook" alt="The Front of Your Book" width="1334px" height="750px" />
-
-      <form action="{file that the form data should be sent to}" method="post">
-          <div>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required></input>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required></input>
-
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"></input> 
-              <p>Remember me</p>
-            </label>
-          </div>
-
-          <div>
-            <button id="cancel">Cancel</button>
-            <span class="psw"><a href="#">Forgot password?</a></span>
-            <p>Not a member yet? <a href="#">Sign up!!</a></p>
-          </div>
-        </form>
+      {
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+      }
     </div>
   );
 }
@@ -49,50 +26,50 @@ function Inside() {
     <div>
       <img src={inside} className="insideOfBook" alt="The Inside of Your Book" width="1334px" height="750px" />
   	
-      <div class="flexContainer">
-        <div class="flexItem lists">
-          <div class="leftListBox">
+      <div className="flexContainer">
+        <div className="flexItem lists">
+          <div className="leftListBox">
             <ul>
-              <li class="eachListItem one" id="itemOne" contenteditable="true">One</li>
-              <li class="eachListItem two" id="itemTwo" contenteditable="true">Two</li>
-              <li class="eachListItem three" id="itemThree" contenteditable="true">Three</li>
-              <li class="eachListItem four" id="itemFour" contenteditable="true">Four</li>
-              <li class="eachListItem five" id="itemFive" contenteditable="true">Five</li>
-              <li class="eachListItem six" id="itemSix" contenteditable="true">Six</li>
-              <li class="eachListItem seven" id="itemSeven" contenteditable="true">Seven</li>
-              <li class="eachListItem eight" id="itemEight" contenteditable="true">Eight</li>
-              <li class="eachListItem nine" id="itemNine" contenteditable="true">Nine</li>
-              <li class="eachListItem ten" id="itemTen" contenteditable="true">Ten</li>
-              <li class="eachListItem eleven" id="itemEleven" contenteditable="true">Eleven</li>
-              <li class="eachListItem twelve" id="itemTwelve" contenteditable="true">Twelve</li>
-              <li class="eachListItem thirteen" id="itemThirteen" contenteditable="true">Thirteen</li>
-              <li class="eachListItem fourteen" id="itemFourteen" contenteditable="true">Fourteen</li>
+              <li className="eachListItem one" id="itemOne">One</li>
+              <li className="eachListItem two" id="itemTwo">Two</li>
+              <li className="eachListItem three" id="itemThree">Three</li>
+              <li className="eachListItem four" id="itemFour">Four</li>
+              <li className="eachListItem five" id="itemFive">Five</li>
+              <li className="eachListItem six" id="itemSix">Six</li>
+              <li className="eachListItem seven" id="itemSeven">Seven</li>
+              <li className="eachListItem eight" id="itemEight">Eight</li>
+              <li className="eachListItem nine" id="itemNine">Nine</li>
+              <li className="eachListItem ten" id="itemTen">Ten</li>
+              <li className="eachListItem eleven" id="itemEleven">Eleven</li>
+              <li className="eachListItem twelve" id="itemTwelve">Twelve</li>
+              <li className="eachListItem thirteen" id="itemThirteen">Thirteen</li>
+              <li className="eachListItem fourteen" id="itemFourteen">Fourteen</li>
             </ul>
           </div>
         
-          <div class="rightListBox">
+          <div className="rightListBox">
             <ul>
-              <li class="eachListItem fifteen" id="itemFifteen" contenteditable="true">Fifteen</li>
-              <li class="eachListItem sixteen" id="itemSixteen" contenteditable="true">Sixteen</li>
-              <li class="eachListItem seventeen" id="itemSeventeen" contenteditable="true">Seventeen</li>
-              <li class="eachListItem eighteen" id="itemEighteen" contenteditable="true">Eighteen</li>
-              <li class="eachListItem nineteen" id="itemNineteen" contenteditable="true">Nineteen</li>
-              <li class="eachListItem twenty" id="twenty" contenteditable="true">Twenty</li>
-              <li class="eachListItem twentyOne" id="twentyOne" contenteditable="true">Twenty-One</li>
-              <li class="eachListItem twentyTwo" id="twentyTwo" contenteditable="true">Twenty-Two</li>
-              <li class="eachListItem twentyThree" id="twentyThree" contenteditable="true">Twenty-Three</li>
-              <li class="eachListItem twentyFour" id="twentyFour" contenteditable="true">Twenty-Four</li>
-              <li class="eachListItem twentyFive" id="twentyFive" contenteditable="true">Twenty-Five</li>
-              <li class="eachListItem twentySix" id="twentySix" contenteditable="true">Twenty-Six</li>
-              <li class="eachListItem twentySeven" id="twentySeven" contenteditable="true">Twenty-Seven</li>
-              <li class="eachListItem twentyEight" id="twentyEight" contenteditable="true">Twenty-Eight</li>
+              <li className="eachListItem fifteen" id="itemFifteen">Fifteen</li>
+              <li className="eachListItem sixteen" id="itemSixteen">Sixteen</li>
+              <li className="eachListItem seventeen" id="itemSeventeen">Seventeen</li>
+              <li className="eachListItem eighteen" id="itemEighteen">Eighteen</li>
+              <li className="eachListItem nineteen" id="itemNineteen">Nineteen</li>
+              <li className="eachListItem twenty" id="twenty">Twenty</li>
+              <li className="eachListItem twentyOne" id="twentyOne">Twenty-One</li>
+              <li className="eachListItem twentyTwo" id="twentyTwo">Twenty-Two</li>
+              <li className="eachListItem twentyThree" id="twentyThree">Twenty-Three</li>
+              <li className="eachListItem twentyFour" id="twentyFour">Twenty-Four</li>
+              <li className="eachListItem twentyFive" id="twentyFive">Twenty-Five</li>
+              <li className="eachListItem twentySix" id="twentySix">Twenty-Six</li>
+              <li className="eachListItem twentySeven" id="twentySeven">Twenty-Seven</li>
+              <li className="eachListItem twentyEight" id="twentyEight">Twenty-Eight</li>
             </ul>
           </div>
         </div>
     
         <button> (arrow left) </button>
 	      <button> (arrow right) </button>
-	      <a> (saved and posted stories button) </a>    
+	      <button>(goes to back)</button>    
       </div>
     </div>
   );
@@ -103,8 +80,8 @@ function Back() {
     <div>
       <img src={back} className="backOfBook" alt="The Back of Your Book" width="1334px" height="750px" />
 	
-	    <div class="savedStoriesContainer">
-		    <div class="savedStories">
+	    <div className="savedStoriesContainer">
+		    <div className="savedStories">
 
 			  </div>
 		    <button>Post</button>
@@ -113,13 +90,14 @@ function Back() {
 		    <button> (arrow left) </button>
 		    <button> (arrow right) </button>
 	    </div>
-	    <div class="postedStoriesContainer">
-		    <div class="postedStories">
+	    <div className="postedStoriesContainer">
+		    <div className="postedStories">
 		
 		    </div>
 		    <button> (arrow left) </button>
 		    <button> (arrow right) </button>
 	    </div>
+      <button>(goes to inside)</button>
     </div>
   );
 }
@@ -131,5 +109,21 @@ function Loading() {
     </div>
   );
 }  
+
+function ToggleVisibility ({children}) {
+  const [show, setShow] = useState();
+
+  function toggleShow() {
+    setShow(!show);
+  }
+
+  var buttonText = show ? "Hide" : "Show";
+  return (
+    <div className="component-container">
+      {show && children}
+      <button onClick={toggleShow}>{buttonText}</button>
+    </div>
+  );
+}
 
 export default App;
