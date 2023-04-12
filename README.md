@@ -1,55 +1,70 @@
-# LitApp (WIP)
+# Getting Started with Create React App
 
-Overview
-    	A story writing app where you get to write your own story, fiction, non-fiction, poetry, etc, and post it where other people will get to see the literature and post their own.
-    	Link to a live working demo: https://fancyspiders.com/comingSoonPage.html
-    	Project on FancySpiders.com:
-    	
-    	Project from GitHub.com: 
-    	
-    
-Features
-    Getting the project onto a live website gave experience with Cpanel and the backend of web hosting with GoDaddy.
-      The "Certifications" button, at the top and bottom, opens a window that displays three Mimo certificates one at a time and can be navigated through with the arrow buttons or with the page buttons.
-    
-Setup & Installation
-	Start – Fresh PC – Ubuntu
-		Step 1 : This assumes you’re on the README file for the repository of “ResumeWebsiteProject” made by SabrinaS0909 – if not then scroll down to find the repository.
-		Step 2 : On the main repository page, click the green Code button.
-		Step 3 : In the menu that appears, click Download ZIP. The entire repository will be downloaded to your device as a zipped file.
-		Step 4 : Find “ResumeWebsiteProject-main.zip” in download history and double click it.
-		Step 5 : When prompted to “Open With…”, double click “Files”
-		Step 6 : Double click the “ResumeWebsiteProject-main.zip” file.
-		Step 7 : Right click the “ResumeWebsiteProject-main” folder and click extract.
-		Step 8 : Choose where you want the file to be located, and click extract.
-		All of the files should now be available in the folder named “ResumeWebsiteProject-main”. 
-	To find the repository:
-		- https://github.com/SabrinaS0909/ResumeWebsiteProject
-			or
-		- https://github.com/SabrinaS0909 > Repositories > ResumeWebsiteProject
-			or
-		- github.com > hamburger in upper right corner > search box = “ResumeWebsiteProject” > SabrinaS0909/ResumeWebsiteProject
-			or
-		- direct link on the original resume {place link here once you put the resume on linked in}
-			or
-		- direct links labeled “Project 1 on Github” on https://www.fancyspiders.com/
-			or
-		- linkedIn profile https://www.linkedin.com/in/sabrina-spruck-b150b493/ > scroll down to “projects”, click “show project”
-		
-*note* This web app is made to work on a live website through goDaddy and cPanel. In order for it to sync correctly with cPanel, the index.html file has to leave out the "Images" folder tag from the src of each image in the document - which is necessary for it to work otherwise, such as when it's downloaded from GitHub. To get the images to work in such an instance, simply add "Images" to the beginning of the src of each image in the index.html document. 
-	Example: src="/leftArrow.png" --> src="Images/leftArrow.png"
-    
-Usage & Details
-    To get a good idea of my software development skills and qualifications through a typical resume format, just with a few extra features that having it placed online allows - such at links to other websites and projects, and buttons that allow inclusions such as the certificates. So navigate around, and see if I'm a good fit for your company!
-    
-ChangeLog & Roadmap
-    2/21/2023 : First deployment, a few of the links lead nowhere as the projects for them are not made yet.
-    
-    The project’s future:
-    	The "Project 2 on Github" and "Other Project 1" links at the top and bottom of the page will lead to the next project once it's completed, one on GitHub and the other on the website itself.
-    	Then, one more project with be completed and the "Project 3 on GitHub" and "Other Project 2" links at the top and bottom of the page will lead to that project, one leading to GitHub and the other on the website itself.
-    	The "[]" within the "Profile" section will be replaced by the names of the projects once they're made, and what they were made with.
-    
-Credits
-    Aside from looking up the average roadblock via Google, all of this was done by me with HTML5, CSS, and Javascript on an Eclipse IDE within a VM made with Oracle VM VirtualBox Manager. The OS used was Ubuntu.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
