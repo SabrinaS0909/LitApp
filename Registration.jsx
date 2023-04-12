@@ -57,10 +57,20 @@ export const Register = (props) => {
             setErrMSg("Invalid Entry");
             return;
         }
-        console.log(user);
+        console.log(user, pass);
+        setSuccess(true);
     }
 
     return (
+        <>
+        {success ? (
+            <section>
+                <h1>Success!</h1>
+                <p>
+                    <a href="#">Sign In</a>
+                </p>
+            </section>
+        ) : (
         <div>
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
             <form onSubmit={handleSubmit}>
@@ -164,5 +174,7 @@ export const Register = (props) => {
                 </div>
             </form>
         </div>
+            )}
+            </>
     )
 }
