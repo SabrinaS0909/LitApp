@@ -9,9 +9,9 @@ import { Loading } from "./Loading.jsx";
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-const toggleForm = (formName) => {
-  setCurrentForm(formName);
-}
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  }
 
   return (
     <div>

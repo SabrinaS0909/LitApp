@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import back from './backOfBook.png';
+import back from './img/backOfBook.png';
 
 function Back() {
     return (

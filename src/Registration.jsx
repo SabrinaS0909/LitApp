@@ -12,7 +12,7 @@ export const Register = (props) => {
     const [user, setUser] = useState('');
     const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false);
-
+    
     const [pass, setPass] = useState('');
     const [validPass, setValidPass] = useState(false);
     const [passFocus, setPassFocus] = useState(false);

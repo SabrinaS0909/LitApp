@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider";
-import front from './frontOfBook.png';
+import front from './img/frontOfBook.png';
 
-import axios from './api/axios';
+import axios from './routes/api/axios';
 const LOGIN_URL = '/auth';
 
 export const Login = (props) => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import inside from './insideOfBook.png';
+import inside from './img/insideOfBook.png';
 
 function Inside() {
     return (
@@ -54,3 +54,5 @@ function Inside() {
       </div>
     );
   }
+
+  export default Inside

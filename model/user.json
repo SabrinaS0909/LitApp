@@ -1,0 +1,20 @@
+[
+    {
+        "username": "FancySpiders",
+        "roles": {
+            "User": 2001,
+            "Editor": 1984,
+            "Admin": 5150
+        },
+        "password": "",
+        "refreshToken": ""
+    },
+    {
+        "username": "BabinBee",
+        "roles": {
+            "User": 2001
+        },
+        "password": "",
+        "refreshToken": ""
+    }
+]
