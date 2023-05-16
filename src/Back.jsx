@@ -26,5 +26,6 @@ function Back() {
         <button>(goes to inside)</button>
       </div>
     );
-  }
+  };
 
+export default Back

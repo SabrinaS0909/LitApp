@@ -53,6 +53,6 @@ function Inside() {
         </div>
       </div>
     );
-  }
+  };
 
   export default Inside
