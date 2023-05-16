@@ -40,20 +40,4 @@ const handleLogin = async (req, res) => {
     }
 }
 
-
-/*
-        const roles = Object.values(foundUser.roles).filter(Boolean);
-
-        // Saving refreshToken with current user
-        foundUser.refreshToken = refreshToken;
-        const result = await foundUser.save();
-        console.log(result);
-        console.log(roles);
-        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 }); //secure: true,
-        res.json({ roles, accessToken });
-    } else {
-        res.sendStatus(401);
-    }
-} */
-
 module.exports = { handleLogin };
