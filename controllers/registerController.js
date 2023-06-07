@@ -1,20 +1,20 @@
-const User = require('../model/User');
-const bcrypt = require('bcrypt');
+import { findOne, create } from '../model/User';
+import { hash } from 'bcrypt';
 
 const handleNewUser = async (req, res) => {
     const { user, pass } = req.body;
     if (!user || !pass) return res.status(400).json({ 'message': 'Username and password are required.'});
     
     //checks for duplicate usernames in the database
-    const duplicate = await User.findOne({ username: user }).exec();
+    const duplicate = await findOne({ username: user }).exec();
     if (duplicate) return res.sendStatus(409); //Conflict
     
     try {
         //encrypt the password
-         const hashedPass = await bcrypt.hash(pass, 10);
+         const hashedPass = await hash(pass, 10);
 
         // create and store the new user 
-        const result = await User.create({ 
+        const result = await create({ 
             "username": user, 
             "password": hashedPass
         });
@@ -27,4 +27,4 @@ const handleNewUser = async (req, res) => {
     }
 }
 
-module.exports = { handleNewUser };
+export default { handleNewUser };

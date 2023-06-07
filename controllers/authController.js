@@ -1,19 +1,19 @@
-const User = require('../model/User');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+import { findOne } from '../model/User';
+import { compare } from 'bcrypt';
+import { sign } from 'jsonwebtoken';
 
 const handleLogin = async (req, res) => {
     const { user, pass } = req.body;
     if (!user || !pass) return res.status(400).json({ 'message' : 'Username and password are required.' });
     
-    const foundUser = await User.findOne({ username: user }).exec();
+    const foundUser = await findOne({ username: user }).exec();
     if (!foundUser) return res.sendStatus(401); //Unauthorized
     // evaluate password
-    const match = await bcrypt.compare(pass, foundUser.password);
+    const match = await compare(pass, foundUser.password);
     if (match) {
         const roles = Object.values(foundUser.roles);
         // create JWTs
-        const accessToken = jwt.sign(
+        const accessToken = sign(
             { 
                 "UserInfo": {
                     "username": foundUser.username,
@@ -23,7 +23,7 @@ const handleLogin = async (req, res) => {
             process.env.ACCESS_TOKEN_SECRET,
             { expiresIn: '1h' }
         );
-        const refreshToken = jwt.sign(
+        const refreshToken = sign(
             { "username": foundUser.username },
             process.env.REFRESH_TOKEN_SECRET,
             { expiresIn: '1d' }
@@ -40,4 +40,4 @@ const handleLogin = async (req, res) => {
     }
 }
 
-module.exports = { handleLogin };
+export default { handleLogin };
