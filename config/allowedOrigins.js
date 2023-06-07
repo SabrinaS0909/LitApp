@@ -3,4 +3,4 @@ const allowedOrigins = [
     'https://fancyspiders.com',
 ];
 
-module.exports = allowedOrigins;
+export default allowedOrigins;
