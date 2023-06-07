@@ -68,20 +68,20 @@ export const Login = (props) => {
             </section>
         ) : (
             <div>
-                <img src={front} className="frontOfBook" alt="The Front of Your Book" width="1334px" height="750px" />
+                <img src={front} className="frontOfBook" alt="The Front of Your Book" class="fobImage" />
 
                 <p ref={errRef} aria-live="assertive">{errMsg}</p>
 
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="uname">
+                        <label htmlFor="user">
                             <b>Username</b>
                         </label>
                         <input 
                             value={user} 
                             type="text" 
                             placeholder="Enter Username" 
-                            name="uname"
+                            name="user"
                             ref={userRef}
                             autoComplete="off"
                             onChange={(e) => setUser(e.target.value)}
@@ -89,14 +89,14 @@ export const Login = (props) => {
                         >
                         </input>
 
-                        <label htmlFor="psw">
+                        <label htmlFor="pass">
                             <b>Password</b>
                         </label>
                         <input 
                             value={pass} 
                             type="password" 
                             placeholder="Enter Password" 
-                            name="psw"
+                            name="pass"
                             onChange={(e) => setPass(e.target.value)}
                             required
                         >
@@ -112,7 +112,7 @@ export const Login = (props) => {
 
                     <div>
                         <button id="cancel">Cancel</button>
-                        <span className="psw"><a href="#">Forgot password?</a></span>
+                        <span className="pass"><a href="#">Forgot password?</a></span>
                         <p>Not a member yet? <button onClick={() => props.onFormSwitch('register')}>Sign up!!</button></p>
                     </div>
                 </form>
