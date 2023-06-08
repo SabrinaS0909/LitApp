@@ -72,9 +72,9 @@ export const Login = (props) => {
 
                 <p ref={errRef} aria-live="assertive">{errMsg}</p>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} class="fobForm">
                     <div>
-                        <label htmlFor="user">
+                        <label htmlFor="user" class="fobBlockElements">
                             <b>Username</b>
                         </label>
                         <input 
@@ -86,10 +86,10 @@ export const Login = (props) => {
                             autoComplete="off"
                             onChange={(e) => setUser(e.target.value)}
                             required
+                            class="fobBlockElements"
                         >
                         </input>
-
-                        <label htmlFor="pass">
+                        <label htmlFor="pass" class="fobBlockElements">
                             <b>Password</b>
                         </label>
                         <input 
@@ -99,12 +99,13 @@ export const Login = (props) => {
                             name="pass"
                             onChange={(e) => setPass(e.target.value)}
                             required
+                            class="fobBlockElements"
                         >
                         </input>
 
-                        <button type="submit">Login</button>
+                        <button type="submit" class="fobBlockElements">Login</button>
 
-                        <label>
+                        <label class="fobInlineElements">
                             <input type="checkbox" checked="checked" name="remember"></input> 
                             <p>Remember me</p>
                         </label>
@@ -112,8 +113,8 @@ export const Login = (props) => {
 
                     <div>
                         <button id="cancel">Cancel</button>
-                        <span className="pass"><a href="#">Forgot password?</a></span>
-                        <p>Not a member yet? <button onClick={() => props.onFormSwitch('register')}>Sign up!!</button></p>
+                        <span className="pass"><a href="#" class="fobBlockElements">Forgot password?</a></span>
+                        <p>Not a member yet? <button class="fobBlockElements" onClick={() => props.onFormSwitch('register')}>Sign up!!</button></p>
                     </div>
                 </form>
             </div>
