@@ -42,6 +42,7 @@ body {
     sans-serif;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+	font-size: 25px;
 }
 img {
 	position: fixed;
@@ -70,14 +71,26 @@ input:focus::placeholder {
 }
 
 /*front specifics*/
-.fobImage {
+.container {
 	display: flex;
+}
+.fobImage {
 	justify-content: center;
 	align-items: center;
 	height: 90%;
 	width: 90%;
 }
-
+.fobForm {
+	position: fixed;
+	top: 30%;
+	left: 60%;
+}
+.fobBlockElements {
+	display: block;
+}
+.fobInlineElements {
+	display: inline;
+}
 
 /*inside specifics*/
 
