@@ -42,7 +42,8 @@ body {
     sans-serif;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-	font-size: 25px;
+	font-size: 16px;
+	color:#1a1213;
 }
 img {
 	border-radius: 10px;
@@ -68,6 +69,9 @@ input:focus::placeholder {
 }
 
 /*front specifics*/
+input {
+	width: 200px;
+}
 .container {
 	display: flex;	
 	justify-content: center;
@@ -79,14 +83,37 @@ input:focus::placeholder {
 }
 .fobForm {
 	position: fixed;
-	top: 30%;
-	left: 60%;
+	top: 275px;
+	left: 770px;
 }
 .fobBlockElements {
 	display: block;
 }
 .fobInlineElements {
 	display: inline;
+}
+.username {
+	font-size: 28px;
+	position: relative;
+	bottom: 20px;
+	right: 60px;
+}
+.password {
+	font-size: 14px;
+	position: relative;
+	right: 60px;
+	top: 5px;
+}
+.login {
+	position: relative;
+	top: 17px;
+	width: 75px;
+	height: 25px;
+	left: 40px;
+	border: solid 3px #1a1213;
+	border-radius: 10px;
+	background-color: rgb(255, 247, 203);
+	color:#1a1213;
 }
 	/*front alt sizings*/
 	@media (max-width:320px){
