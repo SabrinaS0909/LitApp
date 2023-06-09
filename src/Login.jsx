@@ -74,7 +74,7 @@ export const Login = (props) => {
 
                 <form onSubmit={handleSubmit} class="fobForm">
                     <div>
-                        <label htmlFor="user" class="fobBlockElements">
+                        <label htmlFor="user" class="fobBlockElements username">
                             <b>Username</b>
                         </label>
                         <input 
@@ -89,7 +89,7 @@ export const Login = (props) => {
                             class="fobBlockElements"
                         >
                         </input>
-                        <label htmlFor="pass" class="fobBlockElements">
+                        <label htmlFor="pass" class="fobBlockElements password">
                             <b>Password</b>
                         </label>
                         <input 
@@ -103,7 +103,7 @@ export const Login = (props) => {
                         >
                         </input>
 
-                        <button type="submit" class="fobBlockElements">Login</button>
+                        <button type="submit" class="fobBlockElements login"><b>LOGIN</b></button>
 
                         <label class="fobInlineElements">
                             <input type="checkbox" checked="checked" name="remember"></input> 
