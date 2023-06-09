@@ -45,10 +45,6 @@ body {
 	font-size: 25px;
 }
 img {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	margin: 50px;
 	border-radius: 10px;
   	filter: drop-shadow(10px 10px 10px #1a1213); 
 	z-index: -1;
@@ -58,6 +54,7 @@ footer {
 	text-align: right;
 	bottom: 5px;
 	right: 5px;
+	font-size: 10px;
 }
 
 input:focus::placeholder {
@@ -72,13 +69,13 @@ input:focus::placeholder {
 
 /*front specifics*/
 .container {
-	display: flex;
-}
-.fobImage {
+	display: flex;	
 	justify-content: center;
 	align-items: center;
-	height: 90%;
-	width: 90%;
+}
+.fobImage {
+	height: 768px;
+	width: 1024px;
 }
 .fobForm {
 	position: fixed;
@@ -91,6 +88,28 @@ input:focus::placeholder {
 .fobInlineElements {
 	display: inline;
 }
+	/*front alt sizings*/
+	@media (max-width:320px){
+
+	}
+	@media (max-width:480px){
+		
+	}
+	@media (max-width:600px){
+		
+	}
+	@media (max-width:768px){
+		
+	}
+	@media (max-width:900px){
+		
+	}
+	@media (max-width:1024px){
+		
+	}
+	@media (max-width:1200px){
+		
+	}
 
 /*inside specifics*/
 
