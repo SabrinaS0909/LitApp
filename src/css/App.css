@@ -128,7 +128,7 @@ input {
 	top: 37px;
 	width: 75px;
 	height: 25px;
-	left: 115px;
+	left: 105px;
 	border: solid 3px #1a1213;
 	border-radius: 10px;
 	background-color: rgb(255, 247, 203);
@@ -183,6 +183,18 @@ input {
 	bottom: 60px;
 	text-decoration: none;
 	font-size: 11px;
+}
+.notMember {
+	position: relative;
+	left: 15px;
+	font-weight: bold;
+	color: rgb(255, 247, 203);
+	background-color: #1a1213;
+	border-radius: 15px;
+	font-size: 24px;
+	height: 28px;
+	width: 275px;
+	text-align: center;
 }
 	/*front alt sizings*/
 	@media (max-width:320px){
