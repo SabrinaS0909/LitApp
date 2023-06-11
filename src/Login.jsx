@@ -114,7 +114,7 @@ export const Login = (props) => {
                     <div>
                         <button id="cancel" class="cancel">CANCEL</button>
                         <span className="pass"><a href="#" class="fobBlockElements passForget">Forgot password?</a></span>
-                        <p>Not a member yet? <button class="fobBlockElements" onClick={() => props.onFormSwitch('register')}>Sign up!!</button></p>
+                        <p class="notMember">Not a member yet? <button class="fobBlockElements" onClick={() => props.onFormSwitch('register')}>Sign up!!</button></p>
                     </div>
                 </form>
             </div>
