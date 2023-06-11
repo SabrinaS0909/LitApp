@@ -151,7 +151,6 @@ input {
 	position: relative;
 	top: 55px;
 	left: 80px;
-	background-color: rgb(255, 247, 203);
 }
 .label {
 	position: relative;
@@ -161,6 +160,29 @@ input {
 	border-radius: 10px;
 	border: solid 3px #1a1213;
 	padding: 3px;
+}
+.cancel, .passForget {
+	position: relative;
+	bottom: 40px;
+	font-weight: bold;
+	font-size: 10px;
+	color: #1a1213;
+	border-radius: 10px;
+	border: solid 3px #1a1213;
+	background-color: rgb(255, 247, 203);
+}
+.cancel {
+	right: 20px;
+}
+.passForget {
+	height: 15px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	left: 215px;
+	bottom: 60px;
+	text-decoration: none;
+	font-size: 11px;
 }
 	/*front alt sizings*/
 	@media (max-width:320px){
