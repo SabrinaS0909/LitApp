@@ -51,7 +51,7 @@ img {
 	z-index: -1;
 }
 footer {
-	position: fixed;
+	position: relative;
 	text-align: right;
 	bottom: 5px;
 	right: 5px;
@@ -70,7 +70,7 @@ input:focus::placeholder {
 
 /*front specifics*/
 input {
-	width: 200px;
+	width: 290px;
 }
 .container {
 	display: flex;	
@@ -78,13 +78,16 @@ input {
 	align-items: center;
 }
 .fobImage {
-	height: 768px;
-	width: 1024px;
+	height: 850px;
+	width: 1152px;
+	position: relative;
+	right: 5px;
+	bottom: 40px;
 }
 .fobForm {
-	position: fixed;
-	top: 275px;
-	left: 770px;
+	position: relative;
+	bottom: 690px;
+	left: 700px;
 }
 .fobBlockElements {
 	display: block;
@@ -93,27 +96,41 @@ input {
 	display: inline;
 }
 .username {
-	font-size: 28px;
+	font-size: 34px;
 	position: relative;
-	bottom: 20px;
-	right: 60px;
+	top: 0px;
+	left: 0px;
+}
+.userInputBox {
+	height: 45px;
+	position: relative;
+	top: 8px;
 }
 .password {
 	font-size: 14px;
 	position: relative;
-	right: 60px;
-	top: 5px;
+	left: 0px;
+	top: 12px;
+}
+.passInputBox {
+	position: relative;
+	top: 10px;
 }
 .login {
 	position: relative;
-	top: 17px;
+	top: 30px;
 	width: 75px;
 	height: 25px;
-	left: 40px;
+	left: 115px;
 	border: solid 3px #1a1213;
 	border-radius: 10px;
 	background-color: rgb(255, 247, 203);
 	color:#1a1213;
+}
+.goDaddy {
+	position: relative;
+	top: 855px;
+	left: 5px;
 }
 	/*front alt sizings*/
 	@media (max-width:320px){
