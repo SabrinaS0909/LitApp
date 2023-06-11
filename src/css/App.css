@@ -53,7 +53,7 @@ img {
 footer {
 	position: relative;
 	text-align: right;
-	bottom: 5px;
+	bottom: 350px;
 	right: 5px;
 	font-size: 10px;
 }
@@ -138,6 +138,29 @@ input {
 	position: relative;
 	top: 855px;
 	left: 5px;
+}
+.rememberMe {
+	display: inline;
+	position: relative;
+	top: 45px;
+	left: 100px;
+}
+.check {
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 55px;
+	left: 80px;
+	background-color: rgb(255, 247, 203);
+}
+.label {
+	position: relative;
+	right: 150px;
+	background-color: rgb(255, 247, 203);
+	color: #1a1213;
+	border-radius: 10px;
+	border: solid 3px #1a1213;
+	padding: 3px;
 }
 	/*front alt sizings*/
 	@media (max-width:320px){
