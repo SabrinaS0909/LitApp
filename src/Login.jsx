@@ -106,8 +106,8 @@ export const Login = (props) => {
                         <button type="submit" class="fobBlockElements login"><b>LOGIN</b></button>
 
                         <label class="fobInlineElements">
-                            <input type="checkbox" checked="checked" name="remember"></input> 
-                            <p>Remember me</p>
+                            <input class="rememberMe check" type="checkbox" checked="checked" name="remember"></input> 
+                            <p class="rememberMe label"><b>REMEMBER ME</b></p>
                         </label>
                     </div>
 
