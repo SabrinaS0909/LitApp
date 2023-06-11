@@ -86,7 +86,7 @@ export const Login = (props) => {
                             autoComplete="off"
                             onChange={(e) => setUser(e.target.value)}
                             required
-                            class="fobBlockElements"
+                            class="fobBlockElements userInputBox"
                         >
                         </input>
                         <label htmlFor="pass" class="fobBlockElements password">
@@ -99,7 +99,7 @@ export const Login = (props) => {
                             name="pass"
                             onChange={(e) => setPass(e.target.value)}
                             required
-                            class="fobBlockElements"
+                            class="fobBlockElements passInputBox"
                         >
                         </input>
 
