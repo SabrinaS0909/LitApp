@@ -2,62 +2,58 @@
 
 <ins>Overview:</ins>
 
-The purpose of this project is to . . .
+The purpose of this project is to ...
 
-Link to a live working demo: https://www.fancyspiders.com/
+Link to a live working demo: _________
 
-Project on FancySpiders.com:
+Project on FancySpiders.com: 
 
-https://user-images.githubusercontent.com/113223660/224584126-063eb5ad-478e-433a-a635-358be999be20.mp4
+_______________
 
 <br>
 Downloading from GitHub.com: 
 
-https://user-images.githubusercontent.com/113223660/224609897-b9a51838-d726-480d-a4e7-f020c5c82dd2.mp4
+_______________
 
 <br>
 <ins>Features:</ins>
-
-Getting the project onto a live website gave experience with Cpanel and the backend of web hosting with GoDaddy.
-
-The skill bars animate with Javascript to their respective level.
-
-The "Certifications" button, at the top and bottom, opens a window that displays three Mimo certificates one at a time and can be navigated through with the arrow buttons or with the page buttons.
-
+-
+-
+-
 
 <ins>Setup & Installation:</ins>
 
 Start – Fresh PC – Ubuntu
 
-Step 1 : This assumes you’re on the README file for the repository of “ResumeWebsiteProject” made by SabrinaS0909 – if not then scroll down to find the repository.
+Step 1 : This assumes you’re on the README file for the repository of “_________” made by SabrinaS0909 – if not then scroll down to find the repository.
 
 Step 2 : On the main repository page, click the green Code button.
 
 Step 3 : In the menu that appears, click Download ZIP. The entire repository will be downloaded to your device as a zipped file.
 
-Step 4 : Find “ResumeWebsiteProject-main.zip” in download history and double click it.
+Step 4 : Find “_____________” in download history and double click it.
 
 Step 5 : When prompted to “Open With…”, double click “Files”
 
-Step 6 : Double click the “ResumeWebsiteProject-main.zip” file.
+Step 6 : Double click the “____________” file.
 
-Step 7 : Right click the “ResumeWebsiteProject-main” folder and click extract.
+Step 7 : Right click the “____________” folder and click extract.
 
 Step 8 : Choose where you want the file to be located, and click extract.
 
-All of the files should now be available in the folder named “ResumeWebsiteProject-main”. 
+All of the files should now be available in the folder named “_______”. 
 
 To find the repository:
 
-- https://github.com/SabrinaS0909/ResumeWebsiteProject
+- https://github.com/SabrinaS0909/________
 
 or
 
-- https://github.com/SabrinaS0909 > Repositories > ResumeWebsiteProject
+- https://github.com/SabrinaS0909 > Repositories > ___________
 
 or
 
-- github.com > hamburger in upper right corner > search box = “ResumeWebsiteProject” > SabrinaS0909/ResumeWebsiteProject
+- github.com > hamburger in upper right corner > search box = “__________” > SabrinaS0909/_____________
 
 or
 
@@ -77,17 +73,17 @@ or
 
 <ins>Usage & Details:</ins>
 
-The usage of this app is the same as it's purpose, which is to display my software development skills and qualifications through a typical resume format, just with a few extra features that having it placed online allows - such at links to other websites and projects, and buttons that allow inclusions such as the certificates. So navigate around, and see if I'm a good fit for your company!
+The usage of this app is ...
     
 <ins>ChangeLog & Roadmap:</ins>
 
-- 2/21/2023 : First deployment, a few of the links lead nowhere as the projects for them are not made yet.
+- Date : Description of change
     
 The project’s future:
 
-- The "Project 2" link at the top and bottom of the page will lead to the next project once it's completed.
+- 
 
-- The "Project 3" link at the top and bottom of the page will lead to the next project once it's completed.
+- 
     
 <ins>Credits:</ins>
 
